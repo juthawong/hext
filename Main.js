@@ -18,7 +18,7 @@ var toHexFunction = function toHex(text) {
       for (var i = 0; i < text.length; i++) {
         hexForm += parseInt(text.charCodeAt(i)).toString(16);
       }
-      success(hexForm);
+      success(hexForm.toUpperCase());
     } catch (err) {
       fail(err);
     }
