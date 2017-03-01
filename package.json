@@ -1,0 +1,26 @@
+{
+  "name": "hext",
+  "version": "1.0.0",
+  "description": "Simple, javascript based hex to text & text to hex converter.",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umut-sahin/hext.git"
+  },
+  "keywords": [
+    "hex",
+    "text",
+    "converter",
+    "encoder",
+    "decoder"
+  ],
+  "author": "Umut Şahin <umutsahin@protonmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/umut-sahin/hext/issues"
+  },
+  "homepage": "https://github.com/umut-sahin/hext#readme"
+}
