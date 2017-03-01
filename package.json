@@ -1,6 +1,6 @@
 {
   "name": "hext",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Simple, javascript based hex to text & text to hex converter.",
   "main": "Main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umut-sahin/hext"
+    "url": "git+https://github.com/umut-sahin/hext.git"
   },
   "keywords": [
     "hex",
