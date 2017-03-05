@@ -24,7 +24,7 @@ var toTextWithCallback = function(hex, callback) {
     }
     callback(null, textForm);
   } catch (err) {
-    callback(err, null)
+    callback(err, null);
   }
 }
 var toHexWithCallback = function(text, callback) {
@@ -35,7 +35,7 @@ var toHexWithCallback = function(text, callback) {
     }
     callback(null, hexForm.toUpperCase());
   } catch (err) {
-    callback(err, null)
+    callback(err, null);
   }
 }
 var toTextWithPromise = function(hex) {

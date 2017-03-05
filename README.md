@@ -204,7 +204,7 @@ hext.toHexWithPromise(textFormat).then(function(hexFormat){
 For Example:
 ```javascript
 hext.toHexWithPromise("Hello World!").then(function(hexFormat){
-  console.log(hexFormat); //Prints Hello World!
+  console.log(hexFormat); //Prints 48656C6C6F20576F726C6421
 }).catch(function (err){
   console.log(err.message);
 });
