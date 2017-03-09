@@ -16,7 +16,7 @@ var toHexSync = function(text) {
   }
   return hexForm.toUpperCase();
 }
-var toTextWithCallback = function(hex, callback) {
+var toText = function(hex, callback) {
   try {
     var textForm = "";
     for (var i = 0; i < hex.length; i += 2) {
@@ -27,7 +27,7 @@ var toTextWithCallback = function(hex, callback) {
     callback(err, null);
   }
 }
-var toHexWithCallback = function(text, callback) {
+var toHex = function(text, callback) {
   try {
     var hexForm = "";
     for (var i = 0; i < text.length; i++) {
@@ -68,9 +68,9 @@ var allInOne = function(options) {
   var to = options.to;
   if (options.callback) {
     if (to == "hex") {
-      toHexWithCallback(options.data, options.callback);
+      toHex(options.data, options.callback);
     } else if (to == "text") {
-      toTextWithCallback(options.data, options.callback);
+      toText(options.data, options.callback);
     }
   } else if (options.promise === true) {
     if (to == "hex") {
@@ -90,7 +90,7 @@ var allInOne = function(options) {
 module.exports = allInOne;
 module.exports.toTextSync = toTextSync;
 module.exports.toHexSync = toHexSync;
-module.exports.toTextWithCallback = toTextWithCallback;
-module.exports.toHexWithCallback = toHexWithCallback;
+module.exports.toText = toText;
+module.exports.toHex = toHex;
 module.exports.toTextWithPromise = toTextWithPromise;
 module.exports.toHexWithPromise = toHexWithPromise;

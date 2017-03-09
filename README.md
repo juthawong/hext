@@ -127,7 +127,7 @@ try {
 ### Convert Hex to Text
 
 ```javascript
-hext.toTextWithCallback(hexFormat, function(err, textFormat) {
+hext.toText(hexFormat, function(err, textFormat) {
   if (err) {
     console.log(err.message);
   } else {
@@ -138,7 +138,7 @@ hext.toTextWithCallback(hexFormat, function(err, textFormat) {
 
 For Example:
 ```javascript
-hext.toTextWithCallback("48656C6C6F20576F726C6421", function(err, textFormat) {
+hext.toText("48656C6C6F20576F726C6421", function(err, textFormat) {
   if (err) {
     console.log(err.message);
   } else {
@@ -150,7 +150,7 @@ hext.toTextWithCallback("48656C6C6F20576F726C6421", function(err, textFormat) {
 ### Convert Text to Hex
 
 ```javascript
-hext.toHexWithCallback(textFormat, function(err, hexFormat) {
+hext.toHex(textFormat, function(err, hexFormat) {
   if (err) {
     console.log(err.message);
   } else {
@@ -161,7 +161,7 @@ hext.toHexWithCallback(textFormat, function(err, hexFormat) {
 
 For Example:
 ```javascript
-hext.toHexWithCallback("Hello World!", function(err, hexFormat) {
+hext.toHex("Hello World!", function(err, hexFormat) {
   if (err) {
     console.log(err.message);
   } else {
