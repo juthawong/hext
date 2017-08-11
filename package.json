@@ -1,11 +1,8 @@
 {
   "name": "hext",
-  "version": "3.0.0",
-  "description": "Simple, javascript based hex to text & text to hex converter.",
+  "version": "4.0.0",
+  "description": "Simple text to hex & hex to text converter written in native javascript",
   "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/umut-sahin/hext.git"
@@ -22,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/umut-sahin/hext/issues"
   },
-  "homepage": "https://github.com/umut-sahin/hext#readme"
+  "homepage": "https://github.com/umut-sahin/hext#readme",
+  "dependencies": {
+    "buffer": "^5.0.7"
+  }
 }

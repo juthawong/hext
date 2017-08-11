@@ -1,5 +1,6 @@
 # Hext
-Simple, javascript based hex to text &amp; text to hex converter.
+
+Simple text to base64 &amp; base64 to text converter written in native javascript
 
 [Issues](https://github.com/umut-sahin/hext/issues)
 
@@ -26,7 +27,7 @@ You can directly use the library with options without separated functions.
 
 ```javascript
 try {
-  var textFormat = hext({to: "text", data: "48656C6C6F20576F726C6421"});
+  let textFormat = hext({to: "text", data: "48656C6C6F20576F726C6421"});
   console.log(textFormat); //Prints Hello World!
 } catch (err) {
   console.log(err.message);
@@ -34,7 +35,7 @@ try {
 ```
 ```javascript
 try {
-  var hexFormat = hext({to: "hex", data: "Hello World!"});
+  let hexFormat = hext({to: "hex", data: "Hello World!"});
   console.log(hexFormat); //Prints 48656C6C6F20576F726C6421
 } catch (err) {
   console.log(err.message);
@@ -84,7 +85,7 @@ hext({to: "hex", data: "Hello World!", promise: true}).then(function(hexFormat){
 
 ```javascript
 try {
-  var textFormat = hext.toTextSync(hexFormat);
+  let textFormat = hext.toTextSync(hexFormat);
   console.log(textFormat);
 } catch (err) {
   console.log(err.message);
@@ -94,7 +95,7 @@ try {
 For Example:
 ```javascript
 try {
-  var textFormat = hext.toTextSync("48656C6C6F20576F726C6421");
+  let textFormat = hext.toTextSync("48656C6C6F20576F726C6421");
   console.log(textFormat); //Prints Hello World!
 } catch (err) {
   console.log(err.message);
@@ -105,7 +106,7 @@ try {
 
 ```javascript
 try {
-  var hexFormat = hext.toHexSync(textFormat);
+  let hexFormat = hext.toHexSync(textFormat);
   console.log(hexFormat);
 } catch (err) {
   console.log(err.message);
@@ -115,7 +116,7 @@ try {
 For Example:
 ```javascript
 try {
-  var hexFormat = hext.toHexSync("Hello World!");
+  let hexFormat = hext.toHexSync("Hello World!");
   console.log(hexFormat); //Prints 48656C6C6F20576F726C6421
 } catch (err) {
   console.log(err.message);
