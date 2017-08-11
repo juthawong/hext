@@ -19,7 +19,7 @@ let checkText = function(text) {
 }
 let checkHex = function(hex) {
   if (typeof hex === "string") {
-    if (/^(?:[A-Fa-f0-9]{4})*(?:[A-Fa-f0-9]{2}==|[A-Fa-f0-9]{3}=)?$/.test(hex) === true) {
+    if (/[0-9a-fA-F]+/.test(hex) === true) {
       return true;
     } else {
       throw new Error("Hex can only contain '0123456789ABCDEFabcdef'");

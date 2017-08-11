@@ -1,6 +1,6 @@
 {
   "name": "hext",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Simple text to hex & hex to text converter written in native javascript",
   "main": "main.js",
   "repository": {
